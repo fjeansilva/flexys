@@ -28,12 +28,45 @@ h6 {
 .header_menu {
   width: 300px;
   height: 100%;
-  background: #fff;
+  background: #303030;
+  color: #404040;
   position: absolute;
   top: 0;
   left: 0;
   transform: translate(-300px, 0);
   transition: transform 0.3s ease;
+}
+
+.menu_title {
+  width: 100%;
+  background: #404040;
+  height: 50px;
+  position: absolute;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding-top: 30px;
+}
+
+.menu_list {
+  margin-top: 100px;
+  list-style: none;
+}
+
+.menu_list__item {
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+.menu_list__item a.item,
+.menu_list__item a.item:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu_title h1 {
+  margin-top: 20px;
+  font-weight: bold;
 }
 
 .open {
