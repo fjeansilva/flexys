@@ -1,0 +1,350 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body, html {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 1.2em;
+  background: #fefefe;
+  color: #7c7c7c;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 100;
+}
+
+.logo {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.8em;
+  padding-top: 23px;
+}
+
+.input {
+  width: 40%;
+  height: 35px;
+  padding: 10px;
+  border-radius: 4px;
+  border:none;
+  font-size: 1.2em;
+}
+
+.btn_search {
+  display: inline-block;
+  width: 35px;
+  color: #fff;
+  padding: 20px 20px 20px 34px;
+  background-color: #911938;
+}
+
+
+.header {
+  background: url('http://www.coffeecreamthemes.com/themes/jobseek/v2/basic/wp-content/uploads/sites/3/2017/01/basic-home_2a877d1e79a8b04fa511db0bf29906eb.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 500px;
+}
+
+.nav {
+  padding: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  background-color: #911938;
+}
+
+.btn {
+  border: 1px solid #fff;
+  border-radius: 2px;
+  padding: 10px 15px;
+}
+
+.nav_list {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.list_item {
+  padding: 10px;
+}
+
+.list_item a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+}
+
+.list_item a.active {
+  color: #911938;
+  border-bottom: 3px solid #911938;
+}
+
+.container {
+  width: 70%;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+}
+
+.container_title {
+  font-size: 2.4em;
+}
+
+.container_description {
+  font-size: 1.5em;
+}
+
+.how_to {
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.how_to__title {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2.5em;
+  width: 100%;
+}
+
+.how_to__description {
+  font-size: 1.5em;
+  text-align: center;
+  width: 100%;
+}
+
+.step_1,
+.step_2,
+.step_3 {
+  text-align: center;
+  width: calc((90% - 30px) / 3);
+  padding: 20px;
+}
+
+.step_1 h3,
+.step_2 h3,
+.step_3 h3 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+
+.categories {
+  padding: 40px 100px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  color: #9e9e9e;
+}
+
+.categories .categories_title {
+  width: 100%;
+  padding-left: 60px;
+  font-size: 1.4em;
+}
+
+.category {
+  padding: 30px 50px;
+  width: 20%;
+  border: 1px solid #e0e0e0;
+  text-align: center;
+}
+
+.category i.fa {
+  font-size: 3em;
+  color: #911938;
+}
+
+.category h3 {
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.jobs {
+  width: 75%;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.jobs_title {
+  text-transform: uppercase;
+  font-size: 1.4em;
+}
+
+.job_title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.job {
+  margin: 50px 0;
+}
+
+.job_info {
+  margin-top: 3px;
+  border-bottom: 1px solid red;
+  display: flex;
+  flex-flow: row wrap;
+  list-style-type: none;
+  padding: 0 0 20px 0;
+}
+
+.job_info > .info_item {
+  padding: 5px;
+  color: #9e9e9e;
+}
+
+.job_info i {
+  color: #911938;
+}
+
+.btn_jobs {
+  border-radius: 2px;
+  padding: 20px 30px;
+  margin-bottom: 70px;
+  font-size: 1.2em;
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  background: #911938;
+}
+
+.testimonials {
+  background-image: url(https://39sf152pf74z2negmt1gi8ik-wpengine.netdna-ssl.com/wp-content/uploads/2015/11/testimonials-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+}
+
+.testimonials:before {
+  content: '';
+  width: 100%;
+  height: 300px;
+  display: inline-block;
+  background-color: rgba(33, 32, 32, 0.9);
+  position: absolute;
+}
+
+.testimonial {
+  position: relative;
+  padding-top: 70px;
+  color: #fff;
+  text-align: center;
+}
+
+.testimonial p {
+  font-size: 1.6em;
+}
+
+.testimonial h4 {
+  font-size: 1.2em;
+}
+
+.get_started {
+  width: 100%;
+  height: 100px;
+  background-color: #911938;
+  color: #fff;
+  text-align: center;
+  padding-top: 70px;
+}
+
+.get_started span {
+  font-size: 2em;
+}
+
+.get_started a {
+  color: #fff;
+  border: 1px solid #fff;
+  text-decoration: none;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 1em;
+  margin-left: 30px;
+}
+
+/*
+ *
+ * Footer
+ *
+ */
+
+.footer {
+  background: #232526;
+  color: #b9b9b9;
+}
+
+.footer__contact {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.contact__phone,
+.contact__email {
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.contact__phone {
+  text-align: right;
+}
+
+.phone__title,
+.email__title {
+  text-transform: uppercase;
+}
+
+.footer {
+  padding-top: 40px;
+}
+.footer__social {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: 20px 20%;
+}
+
+.footer__copyright {
+  padding: 30px 0 20px 0;
+  text-align: center;
+  font-size: 1em;
+}
+
+.social__item .fa {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  padding: 17px 0 0 20px;
+  background: #555b61;
+  color: #fff;
+  transition: background 0.5s;
+}
+
+.social__item .fa:hover {
+  cursor: pointer;
+  background: #cb2d3e;
+}
