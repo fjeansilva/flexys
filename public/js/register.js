@@ -5,7 +5,7 @@ $(document).ready(function(){
   let app = {};
 
   $('.btn_send').click(function(){
-    let uri = 'https://flexys.herokuapp.com//v1/professionals'
+    let uri = 'https://flexys.herokuapp.com/v1/professionals'
     let data = $('.form').serialize();
 
     $.post(uri, data, function(){
