@@ -44,7 +44,7 @@ server.register(require('inert'), (err) => {
     }
   });
 
-  require('./professional.server.controller')(server);
+  require('./professional.server.route')(server);
 
 });
 

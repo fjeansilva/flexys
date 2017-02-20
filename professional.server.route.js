@@ -4,7 +4,7 @@ module.exports = (server) => {
 
   server.route({
     method: 'POST',
-    path: '/professionals',
+    path: '/v1/professionals',
     handler: (request, reply) => {
       professional.create(request, reply);
     }
@@ -12,7 +12,7 @@ module.exports = (server) => {
 
   server.route({
     method: 'GET',
-    path: '/professionals',
+    path: '/v1/professionals',
     handler: (request, reply) => {
       professional.all(request, reply);
     }
