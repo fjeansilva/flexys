@@ -1,10 +1,172 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
   <head>
     <meta charset="utf-8">
-    <title>register-user</title>
+    <title>Flexys</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <style media="screen">
+      .header {
+        height: 170px;
+        background: none;
+        background-color: #911938;
+      }
+
+      .nav {
+        border-bottom: 1px solid #fff;
+      }
+
+      .container {
+        margin: 0;
+      }
+
+      .form label,
+      .form .input {
+        display: block;
+      }
+
+      .form_group {
+        margin: 30px;
+      }
+
+      .form_group .input {
+        width: 100%;
+      }
+
+      .form label {
+        line-height: 2em;
+        font-weight: bold;
+        color: #000;
+        font-size: 1.2em;
+      }
+
+      .form .input {
+        border: 1px solid #ccc;
+      }
+
+      .btn_upload,
+      .btn_send {
+        display: block;
+        width: 70px;
+        padding: 20px;
+        color: #fff;
+        background-color: #911938;
+        text-decoration: none;
+        border-radius: 4px;
+      }
+
+      @media screen and (min-width: 1276px){
+        .container,
+        .form_group {
+            width: 1276px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .form_group .input {
+          width: 100%;
+        }
+      }
+    </style>
   </head>
   <body>
-    <h1>register-user</h1>
+    <aside class="aside header_menu">
+      <h1 class="menu_title">
+        FLEXYS
+      </h1>
+      <ul class="menu_list">
+        <li class="menu_list__item">
+          <a href="/register" class="item">para candidatos</a>
+        </li>
+        <li class="menu_list__item">
+          <a href="#" class="item">para empresas</a>
+        </li>
+        <li class="menu_list__item">
+          <a href="#" class="item">indique</a>
+        </li>
+        <li class="menu_list__item">
+          <a href="#" class="item">blog</a>
+        </li>
+      </ul>
+    </aside>
+    <main class="main">
+      <header class="header">
+        <nav class="nav">
+          <span class="logo">FLEXYS</span>
+
+          <i class="header_hamburguer fa fa-bars" aria-hidden="true"></i>
+
+          <ul class="nav_list">
+            <li class="list_item"><a href="#">para candidatos</a></li>
+            <li class="list_item"><a href="#">para empresas</a></li>
+            <li class="list_item"><a href="#">indique</a></li>
+            <li class="list_item"><a href="#">blog</a></li>
+            <li class="list_item"><a href="#" class="btn">login</a></li>
+          </ul>
+        </nav>
+        <div class="container">
+          <h1><i class="fa fa-plus-circle" aria-hidden="true"></i> Candidato</h1>
+        </div>
+      </header>
+
+      <section class="register_user">
+        <form class="form">
+          <div class="form_group">
+            <label for="name">Nome</label>
+            <input type="text" name="name" value="" placeholder="ex: Amanda Santos" class="input">
+          </div>
+          <div class="form_group">
+            <label for="email">Email</label>
+            <input type="text" name="email" value="" placeholder="ex: amanda@gmail.com" class="input">
+          </div>
+          <div class="form_group">
+            <label for="photo">Foto (opcional)</label>
+            <a href="#" class="btn_upload"><i class="fa fa-upload" aria-hidden="true"></i> Browser</a>
+          </div>
+          <div class="form_group">
+            <label for="area">Área</label>
+            <input type="text" name="area" value="" placeholder="ex: UX Design" class="input">
+          </div>
+          <div class="form_group">
+            <label for="location">Localização</label>
+            <input type="text" name="location" value="" placeholder="ex: São Paulo" class="input">
+          </div>
+          <div class="form_group">
+            <label for="linkedin">Linkedin</label>
+            <input type="text" name="linkedin" value="" placeholder="Seu endereço do Linkedin" class="input">
+          </div>
+
+          <div class="form_group">
+            <label for="type_of_work">Tipo de trabalho</label>
+            <select class="select input" name="type_of_work">
+              <option value="parttime">Part-Time</option>
+              <option value="fulltime">Full Time</option>
+              <option value="project">Projeto</option>
+              <option value="temporary">Temporário</option>
+            </select>
+          </div>
+          <div class="form_group">
+            <a href="#" class="btn_send"><i class="fa fa-paper-plane" aria-hidden="true"></i> Enviar</a>
+          </div>
+        </form>
+      </section>
+
+    </main>
+    <footer class="footer">
+
+
+
+  <ul class="footer__social">
+    <li class="social__item"><a href="#" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+    <li class="social__item"><a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+    <li class="social__item"><a href="#" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+    <li class="social__item"><a href="#" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+  </ul>
+
+  <p class="footer__copyright">
+    Copyright (c) 2016 Copyright Flexys - Todos os direitos reservados.
+  </p>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="/js/register.js"></script>
   </body>
 </html>

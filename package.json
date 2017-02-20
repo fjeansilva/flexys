@@ -10,7 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "hapi": "^16.1.0",
-    "inert": "^4.1.0"
+    "inert": "^4.1.0",
+    "mongoose": "^4.8.3"
   },
   "devDependencies": {
     "nodemon": "^1.11.0"

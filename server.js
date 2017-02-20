@@ -1,8 +1,11 @@
 'use strict';
 
 const Hapi = require('hapi');
+const mongoose = require('./mongoose');
+const db = mongoose();
 
 const server = new Hapi.Server();
+
 server.connection({ port: 3000, host: 'localhost' });
 
 server.register(require('inert'), (err) => {
@@ -40,6 +43,9 @@ server.register(require('inert'), (err) => {
       reply.file('./public/register-user.html');
     }
   });
+
+  require('./professional.server.controller')(server);
+
 });
 
 server.start((err) => {
