@@ -262,7 +262,7 @@ h6 {
 
 .job_info {
   margin-top: 3px;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid #dccece;
   display: flex;
   flex-flow: row wrap;
   list-style-type: none;
